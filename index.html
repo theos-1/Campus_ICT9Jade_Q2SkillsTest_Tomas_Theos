@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Enrollment</title>
+</head>
+<body class="d-flex flex-column">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+             <img src="https://files.orangeapps.ph/disk001/School_Files/1/school-66/school_profile/1724046763-1128.png" alt="Logo" width="auto" height="70px">
+            </a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+             <li class="nav-item">
+             <a class="nav-link" href="#">Homepage</a>
+             </li>
+             <li class="nav-item">
+             <a class="nav-link" href="#">About us</a>
+             </li>
+             <li class="nav-item">
+             <a class="nav-link" href="#">Contact us</a>
+             </li>
+      </ul>
+        <form class="d-flex ms-auto">
+         <input class="form-control me-2" type="search" placeholder="Search">
+         <button class="btn btn-primary" type="submit">Search</button>
+         </form>
+        </div>
+        </div>
+    </nav>
+<main class="flex-grow-1 d-flex align-items-center py-4">
+<div class="container-fluid px-4">
+    
+    <form>
+      <div class="card p-4 shadow-sm bg-white bg-opacity-75 mb-4">
+        <h2>Application for Admission</h2>
+        <div class="row">
+          <div class="col-md-6 mb-3 mb-md-0">
+            <label for="gradeLevel" class="form-label">Incoming Grade Level: <span class="text-danger">*</span></label>
+            <select class="form-select" id="gradeLevel" name="gradeLevel" required>
+              <option value="" selected>Select Grade Level</option>
+              <option value="CASA (FREE TRIAL)">CASA (FREE TRIAL)</option>
+              <option value="Junior Casa">Junior Casa</option>
+              <option value="Junior Advanced Casa">Junior Advanced Casa</option>
+              <option value="Advanced Casa">Advanced Casa</option>
+              <option value="GRADE 1">GRADE 1</option>
+              <option value="GRADE 2">GRADE 2</option>
+              <option value="GRADE 3">GRADE 3</option>
+              <option value="GRADE 4">GRADE 4</option>
+              <option value="GRADE 5">GRADE 5</option>
+              <option value="GRADE 6">GRADE 6</option>
+              <option value="GRADE 7">GRADE 7</option>
+              <option value="GRADE 8">GRADE 8</option>
+              <option value="GRADE 9">GRADE 9</option>
+              <option value="GRADE 10">GRADE 10</option>
+              <option value="GRADE 11">GRADE 11</option>
+              <option value="GRADE 12">GRADE 12</option>
+            </select>
+          </div>
+
+          <div class="col-md-6">
+            <label for="studentType" class="form-label">Student Type: <span class="text-danger">*</span></label>
+            <select class="form-select" id="studentType" name="studentType" required>
+              <option value="" selected>Select Student Type</option>
+              <option value="New Student">New Student</option>
+              <option value="Old Student">Old Student</option>
+            </select>
+          </div>
+        </div>
+      </div>
+  <div class="container-fluid px-4">
+    <div class="card p-4 shadow-sm bg-white bg-opacity-75">
+      <h2 class="mb-4">Student Information</h2>
+
+      <form>
+        <div class="row mb-3">
+          <div class="col-md-3 mb-3 mb-md-0">
+            <label for="firstName" class="form-label">First Name: <span class="text-danger">*</span></label>
+            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" required>
+          </div>
+          <div class="col-md-3 mb-3 mb-md-0">
+            <label for="middleName" class="form-label">Middle Name:</label>
+            <input type="text" class="form-control" id="middleName" name="middleName" placeholder="Middle Name">
+          </div>
+          <div class="col-md-3 mb-3 mb-md-0">
+            <label for="lastName" class="form-label">Last Name: <span class="text-danger">*</span></label>
+            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" required>
+          </div>
+          <div class="col-md-3">
+            <label for="extensionName" class="form-label">Extension Name:</label>
+            <input type="text" class="form-control" id="extensionName" name="extensionName" placeholder="Jr., II">
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <div class="col-md-3 mb-3 mb-md-0">
+            <label for="province" class="form-label">Province:</label>
+            <input type="text" class="form-control" id="province" name="province" placeholder="Current Province">
+          </div>
+          <div class="col-md-3 mb-3 mb-md-0">
+            <label for="zipcode" class="form-label">Zipcode:</label>
+            <input type="text" inputmode="numeric" class="form-control" id="zipcode" name="zipcode" placeholder="Current Zipcode">
+          </div>
+          <div class="col-md-3 mb-3 mb-md-0">
+        <label for="gender" class="form-label">Gender: <span class="text-danger">*</span></label>
+            <select class="form-select" id="gender" name="gender" required>
+              <option value="" selected>Select Gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+          </div>
+        <div class="col-md-3">
+         <label for="dob" class="form-label">Date of Birth: <span class="text-danger">*</span></label>
+         <input type="date" class="form-control" id="dob" name="dob" required>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+      <div class="col-md-3 mb-3 mb-md-0">
+        <label for="pobCity" class="form-label">Place of Birth: (City/Municipality): <span class="text-danger">*</span></label>
+        <input type="text" class="form-control" id="pobCity" name="pobCity" placeholder="Place of Birth" required>
+      </div>
+          <div class="col-md-3 mb-3 mb-md-0">
+            <label for="pobProvince" class="form-label">Place of Birth: (Province):<span class="text-danger">*</span></label>
+            <input type="text" class="form-control" id="pobProvince" name="pobProvince" placeholder="Province" required>
+          </div>
+          <div class="col-md-3">
+            <label for="nationality" class="form-label">Nationality: <span class="text-danger">*</span></label>
+            <select class="form-select" id="nationality" name="nationality" required>
+              <option value="Filipino" selected>Filipino</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <h2>Contact Details</h2>
+          <div class="row mb-3">
+      <div class="col-md-3 mb-3 mb-md-0">
+        <label for="email" class="form-label">Email Address: <span class="text-danger">*</span></label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Email Address" required>
+      </div>
+      <div class="col-md-3">
+        <label for="contactNumber" class="form-label">Contact Number: <span class="text-danger">*</span></label>
+        <input type="tel" inputmode="numeric" class="form-control" id="contactNumber" name="contactNumber" placeholder="Contact">
+      </div>
+    </div>
+    <h2>Other Information</h2>
+    <div class="row">
+        <div class="col-md-6">
+          <label class="form-label d-block">Mode of Learning: <span class="text-danger">*</span></label>
+
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="modeOfLearning" id="online" value="Online" required>
+            <label class="form-check-label" for="online">Online</label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="modeOfLearning" id="faceToFace" value="Face-to-Face">
+            <label class="form-check-label" for="faceToFace">Face-to-Face</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="confirmInfo" name="confirmInfo" required>
+            <label class="form-check-label" for="confirmInfo">
+              I confirm that the information provided is true and complete. <span class="text-danger">*</span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-12 text-center">
+          <button type="submit" class="btn btn-primary px-4">Submit Enrollment</button>
+        </div>
+      </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</main>
+    <footer class="bg-dark text-white text-center py-3">
+  2026 OB Montessori Center. All rights reserved.
+    </footer>
+</body>
+</html>
